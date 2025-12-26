@@ -1,0 +1,425 @@
+@font-face{
+    font-family: 'josias';
+    src: url('Poppins Bold.ttf'), format(trueype);
+  }
+
+  html {
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+  body{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    font-family: 'josias',Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+
+  }
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav-bar{
+    user-select: none;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    background-image: url(ff_icon/jholer_bkg_0_new.jpg);
+    background-attachment:local;
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    max-height: 100vh;
+}
+.nav-bar a{
+    color: #fff;
+    font-family: 'josias';
+    text-decoration: none;
+    transition: .3s linear;
+}
+
+.nav-bar a:hover{
+    color: #ffffffce;
+}
+
+.nav-bar li:hover a{
+    border-bottom: 2px solid #007bff;
+    letter-spacing: 2px;
+    transition: .3s linear;
+
+}
+
+
+.nav-bar h1{
+    font-size: 30px;
+    padding: 2%;
+    background-color: rgba(0, 0, 0, 0.616);
+    color: #fff;
+
+}
+
+.nav-bar ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.616);
+    padding: 12px;
+    border-radius: 12px;
+    gap: 80px;
+    color: #fff;
+    font-family: 'josias',Arial, Helvetica, sans-serif;
+
+}
+
+.nav-bar li{
+    padding: 2%;
+    list-style: none;
+
+}
+
+header{
+    color: #fff;
+}
+
+header h1{
+    padding-top:5%;
+    color: #000;
+    font-size: 25px;
+    margin: 0 4%;
+}
+
+header section{
+    user-select: none;
+    padding: 2%;
+    display: flex;
+    justify-content: space-around;
+}
+
+header article {
+    box-shadow: #000000be 0 0 5px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2px;
+    overflow: hidden;
+    background-color: #fff;
+    width: 200px;
+    max-width: 200px;
+    height: 200px;
+    max-height: 200px;
+    padding: 20px;
+    border-radius: 12px;
+
+}
+
+
+
+header article p{
+    color: #000;
+}
+
+header article button{
+    background-color: #007bff;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 14px;
+    cursor: pointer;
+    transition: .2s linear;
+}
+
+
+.diamond-options .active {
+    background-color: #007bff;
+    color: #fff;
+  }
+
+header article button:hover{
+    transition: .2s linear;
+    padding: 14px;
+    background-color: #0d61bb;
+
+    
+}
+
+header article button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+header article img{
+    max-width: 100px;
+    width: 100px;
+}
+
+#card2{
+    width: 90px;
+}
+
+.welcome{
+    user-select: none;
+    height: 60vh;
+    background-image: url(ff_icon/dez.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    text-shadow: #000 2px 2px 18px;
+}
+
+#servicos {
+    user-select: none;
+}
+.card-main{
+    user-select: none;
+}
+
+
+
+.fundo{
+    text-align: center;
+    justify-content: center;
+    background-color: #000000a8;
+    width: 100%;
+    height: 60vh;
+}
+
+/*funcionamento*/
+.funcionamento{
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    text-align: center;
+    align-items: start;
+    font-size: 19px;
+    height: 100vh;
+}
+
+.recarga{
+    overflow: hidden;
+    background-image: url(ff_icon/recarga_feita.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+   height: max-content;
+   pointer-events: nonee;
+}
+
+/*comprar dima*/
+.diamantes{
+    display: flex;
+    flex-direction: column;
+}
+
+.diamantes fieldset{
+    padding: 10px;
+}
+
+.diamantes fieldset button{
+    padding: 12px;
+}
+
+.diamond-options{
+    background-color: #000022;
+    background-position: center;
+    background-size: cover;
+    padding: 42px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.diamond-options button{
+    transition: .2s linear;
+}
+
+details p{
+    padding: 2%;
+}
+
+/*btn whatsapp*/
+#whatsapp-btn {
+    background-color: #25D366;
+    color: white;
+    margin-top: 20px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  #whatsapp-btn:hover{
+    background-color: #bdbaba;
+}
+
+.diamond-options input {
+    text-align: center;
+    justify-content: center;
+    margin: 0 2%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+
+sup{
+    color: #f3ab10 !important;
+}
+
+
+.diamond-options button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #e0e0e0;
+  }
+
+  .diamond-options .active {
+    background-color: #007bff;
+    color: #fff;
+  }
+
+  /*assinatura*/
+  .assinatura{
+    height: 100vh;
+    display: grid;
+    flex-direction: column;
+  }
+
+  .assinatura section img{
+    width: 100px;   
+
+  }
+
+  .card-assinatura{
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .card-assinatura button{
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .assinatura article {
+    margin: 0 2%;
+    justify-content: space-between;
+    height: 275px;
+    width: 250px;
+    max-width: 250px;
+    max-height:279px  ;
+  }
+
+  footer{
+    background-color: #000000ea;
+    color: #fff;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    margin-top: 5%;
+    display: block;
+  }
+  footer h1,a{
+    color: #fff;
+  }
+
+  footer p{
+    text-align: center;
+    font-size: 12px;
+  }
+  
+
+
+/*responsivo*/
+@media (max-width:661px){
+
+    .nav-bar ul{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.616);
+        padding: 12px;
+        border-radius: 12px;
+        gap: 18px;
+        color: #fff;
+        font-family: 'josias',Arial, Helvetica, sans-serif;
+    
+    }
+
+    header .card {
+        box-shadow: #000000be 0 0 5px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 0 2px;
+        overflow: hidden;
+        background-color: #fff;
+        width: 100%;
+        height: 200px;
+        max-height: 200px;
+        padding: 20px;
+        border-radius: 12px;
+        margin: 2% 0;
+    
+    }
+
+    header section{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .assinatura article{
+        margin: 12% 0;
+    }
+    .welcome p{
+        font-size: 12px;
+    }
+    
+    .assinatura h1{
+        font-size: 19px;
+    }
+}
+
+
+
+@media (max-width:976px){
+ 
+    .card-assinatura {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       text-align: center;
+       gap: 20%;
+    }
+
+    .card-assinatura article{
+        margin: 2% 0;
+    }
+
+
+}
