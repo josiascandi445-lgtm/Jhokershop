@@ -15,7 +15,7 @@ let selectedDiamonds = 78;
         alert('Insira o seu ID');
         return;
       }  
-      const message = `Olá Jhoker Shop! Quero fazer uma recarga de ${selectedDiamonds} diamantes. Aqui está o meu ID:${playerId}  Como faço o pagamento?`;
+      const message = `Olá Jhoker Shop! Quero fazer uma recarga de ${selectedDiamonds} diamantes. Aqui está o meu ID:${playerId} aguarde enquanto faço o pagamento`;
 
     const url = `https://wa.me/+244974551595?text=${encodeURIComponent(message)}`;
      window.open(url, '_blank');
@@ -24,7 +24,7 @@ let selectedDiamonds = 78;
     }
 
     function contaff(){
-      const message = `Olá Jhoker Shop! Vi no seu site uma opção de conta ff, quero ter mais informações sobre este serviço.`;
+      const message = `Olá Jhoker Shop! Quero obter mais informações sobre venda e compra de conta ff.`;
       const url = `https://wa.me/+244974551595?text=${encodeURIComponent(message)}`;
       window.open(url, '_blank');
     }
@@ -95,9 +95,6 @@ let selectedDiamonds = 78;
       window.open(url, '_blank');
     }
 
-
-
-
     function passeb(){
       const playerId = document.getElementById('playerId').value.trim();
       if(!playerId){
@@ -105,7 +102,7 @@ let selectedDiamonds = 78;
         return;
       }
 
-      const message = `Olá Jhoker Shop! Quero comprar o Passe Booyha. Aqui está o meu ID:${playerId}  Como faço o pagamento?`;
+      const message = `Olá Jhoker Shop! Quero comprar o Passe Booyha. Aqui está o meu ID:${playerId}  aguarde enquanto faço o pagamento`;
       const url = `https://wa.me/+244974551595?text=${encodeURIComponent(message)}`;
       window.open(url, '_blank');
     }
