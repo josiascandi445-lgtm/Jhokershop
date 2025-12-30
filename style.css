@@ -26,6 +26,12 @@ a{
     box-sizing: border-box;
 }
 
+.logo{
+    background-color: #000;
+    text-align: center;
+    color: #fff;
+    padding: 2%;
+}
 .nav-bar{
     user-select: none;
     text-align: center;
@@ -441,7 +447,19 @@ sup{
 /*responsivo*/
 @media (max-width:661px){
 
+    .logo{
+        background-color: #000;
+        text-align: center;
+        color: #fff;
+        padding: 2%;
+        position: fixed;
+        width: 100%;
+        border-radius: 0 0 12px 12px;
+        z-index: 99999;
+    }
+
     .nav-bar{
+        margin-top: 10%;
         user-select: none;
         text-align: center;
         width: 100%;
