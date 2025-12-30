@@ -101,8 +101,22 @@ let selectedDiamonds = 78;
         alert('Insira o seu ID');
         return;
       }
+      
 
       const message = `Olá Jhoker Shop! Quero comprar o Passe Booyha. Aqui está o meu ID:${playerId}  aguarde enquanto faço o pagamento`;
+      const url = `https://wa.me/+244974551595?text=${encodeURIComponent(message)}`;
+      window.open(url, '_blank');
+    }
+
+    function passeDeNivel(){
+      const playerId = document.getElementById('playerId').value.trim();
+      if(!playerId){
+        alert('Insira o seu ID');
+        return;
+      }
+      
+
+      const message = `Olá Jhoker Shop! Quero comprar o Passe de Nível. Aqui está o meu ID:${playerId}  aguarde enquanto faço o pagamento`;
       const url = `https://wa.me/+244974551595?text=${encodeURIComponent(message)}`;
       window.open(url, '_blank');
     }
