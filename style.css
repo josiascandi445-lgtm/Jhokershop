@@ -240,26 +240,34 @@ header article img{
 
 /*funcionamento*/
 .funcionamento{
-    list-style: none;
     display: flex;
     flex-direction: column;
-    color: #000;
-    text-align: center;
-    align-items: start;
+    color: #fff;
     font-size: 19px;
-    background-color: #c0bdbd;
+    background-color: #000022;
     border-radius: 12px;
 }
-
-/*.recarga{
-    overflow: hidden;
-    background-image: url(ff_icon/recarga_feita.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+.funcionamento h1{
+    text-align: center;
+    color: #fff;
+}
+.card-funcionamento{
+    display: flex;
+    flex-direction: column;
+}
+.card-funcionamento article{
+    justify-content: space-between;
+    margin: 2% 0;
     width: 100%;
-   height: max-content;
-   pointer-events: nonee;
-}*/
+    max-width: 100%;
+    height: max-content;
+    max-height: 500px;
+}
+.funcionamento article p{
+    text-align: start;
+    justify-content: start;
+}
+
 
 /*comprar dima*/
 .diamantes{
@@ -371,6 +379,22 @@ sup{
     max-height:279px  ;
   }
 
+     /*card hot*/
+     #passeb{
+        position: relative;
+      }
+      #passeb::before{
+        content: 'popular';
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: #fff;
+        background-color: red;
+        padding: 12px;
+        border-radius: 0 0 0 5px;
+      }
+
+
 
   /*trilha-assinatura*/
     .trilha-evolutiva{
@@ -419,9 +443,16 @@ sup{
       }
 
 
+    .card-evolutiva article, .card-assinatura article, .card-main article{
+        transition: .2s linear;
+    }
 
 
-  
+      .card-evolutiva article:hover, .card-assinatura article:hover, .card-main article:hover{
+        transition: .2s linear;
+        box-shadow: #007bff 0 0 10px;;
+      }
+
 
   footer{
     display: flex;
@@ -431,10 +462,19 @@ sup{
     width: 100%;
     margin: 0;
     padding: 10px;
-    margin-top: 5%;;
+    margin-top: 5%;
   }
   footer h1,a{
     color: #fff;
+    
+  }
+
+  footer a{
+    transition: .2s linear;
+  }
+  footer a:hover{
+    transition: .2s linear;
+    color: #28fa4b;
   }
 
   footer p{
@@ -459,7 +499,7 @@ sup{
     }
 
     .nav-bar{
-        margin-top: 10%;
+        margin-top: 9%;
         user-select: none;
         text-align: center;
         width: 100%;
@@ -509,6 +549,10 @@ sup{
         align-items: center;
         display: flex;
         flex-direction: column;
+    }
+
+    .card-funcionamento article{
+       margin: 12% 0;
     }
 
     .assinatura article{
