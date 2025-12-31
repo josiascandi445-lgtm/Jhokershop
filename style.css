@@ -5,6 +5,7 @@
 
   html {
     scroll-behavior: smooth;
+    scroll-padding-top: 10%;
 }
 
 a{
@@ -189,7 +190,7 @@ header article img{
 .welcome{
     position: relative;
     user-select: none;
-    background-image: url(ff_icon/dez.jpg);
+    background-image: url(skin.jpg);
     height: 100vh;
     background-repeat: no-repeat;
     background-position: center;
@@ -499,7 +500,7 @@ sup{
     }
 
     .nav-bar{
-        margin-top: 10%;
+        margin-top: 9%;
         user-select: none;
         text-align: center;
         width: 100%;
@@ -543,6 +544,13 @@ sup{
         border-radius: 12px;
         margin: 2% 0;
     
+    }
+    .funcionamento h1{
+        border-bottom: 4px solid #fff;
+    }
+
+    #servicos{
+        text-align: center;
     }
 
     header section{
@@ -616,7 +624,6 @@ sup{
     }
 
     
-
 
 
 
