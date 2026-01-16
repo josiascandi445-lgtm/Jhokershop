@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -10,7 +10,6 @@
     <meta name="author" content="Jhoker Shop">
     <link rel="shortcut icon" href="ff_icon/shopping-cart (2).png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <title>Jhoker Shop</title>
 </head>
 
@@ -30,12 +29,13 @@
     </section>
 
     <header>
+        <!--boasVindas-->
             <div class="welcome">
-                <h1 style="color:#fff;">Seja Bem-Vindo a JHOKER SHOP</h1>
+                <h1 style="color:#fff;" id="linha1">Seja Bem-Vindo a JHOKER SHOP</h1>
                 <br>
-                <p> •Faça aqui as suas recargas de diamantes de forma segura</p><br>
-                <p>• Encontre várias contas ao melhor preço ou venda a sua conta </p> <br>
-                <p>• Faça asua assinatura de diamantes ou trilha de armas evolutivas</p>
+                <p id="linha2"> Carregando...</p><br>
+                <p id="linha3">Carregando...</p> <br>
+                <p id="linha4">Carregando...</p>
             </div>
 
             <h1 id="servicos">Serviços Disponíveis</h1>
@@ -124,112 +124,124 @@
                 Comprar diamantes</h1>
             <br>
             <section class="diamond-options" id="buy-dima">
-
+                
+                <!--produtos-->
                 <fieldset style="display: flex;justify-content: space-between; border-radius: 12px;">
-                    <button onclick="selectDiamonds(78)" class="active">Pacote Mini</button>
-                    <p style="font-family: Poppins; font-weight: bold;">78 diamantes
-                        <sup style="color: #00000070;font-weight: bold;">65+13</sup> <strong style="color: #007bff;">
-                            900kz</strong>
-                    </p>
+                    <button onclick="selectDiamonds(this)" class="active" id="botao0">Pacote Mini</button>
+                    <p style="font-family: Poppins; font-weight: bold;" id="desc0">
+                        78 diamantes</p>
+                    <sup style="color: #00000070;font-weight: bold;" id="sub0">65+13</sup> 
+                    <strong style="color: #007bff;">
+                       <span id="preco0"> 900kz</span>
+                    </strong>
                 </fieldset>
 
                 <br>
 
                 <fieldset style="display: flex;justify-content: space-between; border-radius: 12px;">
-                    <button onclick="selectDiamonds(120)">Pacote Lite</button>
-                    <p style="font-family: Poppins; font-weight: bold;"> 120 diamantes
-                        <sup style="color: #00000070;font-weight: bold;">100+20</sup> <strong style="color: #007bff;">
-                            1.300kz</strong>
+                    <button onclick="selectDiamonds(this)" id="botao1">Pacote Lite</button>
+                    <p style="font-family: Poppins; font-weight: bold;" id="desc1"> 120 diamantes
                     </p>
+                        <sup style="color: #00000070;font-weight: bold;"id="sub1">100+20</sup>
+                         <strong style="color: #007bff;">
+                            <span id="preco1"> 1.300kz</span>
+                        </strong>
                 </fieldset>
                 <br>
 
                 <fieldset style="display: flex;justify-content: space-between; border-radius: 12px;">
-                    <button onclick="selectDiamonds(372)">Pacote Ligeiro</button>
-                    <p style="font-family: Poppins; font-weight: bold;">372 diamantes
-                        <sup style="color: #00000070;font-weight: bold;">310+62</sup> <strong style="color: #007bff;">
-                            3.700kz</strong>
+                    <button onclick="selectDiamonds(this)" id="botao2">Pacote Ligeiro</button>
+                    <p style="font-family: Poppins; font-weight: bold;" id="desc2">372 diamantes
                     </p>
+                        <sup style="color: #00000070;font-weight: bold;"id="sub2">310+62</sup> 
+                        <strong style="color: #007bff;">
+                            <span id="preco2"> 3.700kz</span>
+                        </strong>
                 </fieldset>
                 <br>
 
                 <fieldset style="display: flex;justify-content: space-between; border-radius: 12px;">
-                    <button onclick="selectDiamonds(624)">Pacote Mediano</button>
-                    <p style="font-family: Poppins; font-weight: bold;">624 diamantes
-                        <sup style="color: #00000070;font-weight: bold;">520+104</sup> <strong style="color: #007bff;">
-                            5.300kz</strong>
+                    <button onclick="selectDiamonds(this)" id="botao3">Pacote Mediano</button>
+                    <p style="font-family: Poppins; font-weight: bold;" id="desc3">624 diamantes
                     </p>
+                        <sup style="color: #00000070;font-weight: bold;" id="sub3">520+104</sup> 
+                        <strong style="color: #007bff;">
+                            <span id="preco3">  5.300kz </span>
+                        </strong>
                 </fieldset>
                 <br>
 
                 <fieldset style="display: flex;justify-content: space-between; border-radius: 12px;">
-                    <button onclick="selectDiamonds(1272)">Pacote Pro</button>
-                    <p style="font-family: Poppins; font-weight: bold;">1.272 diamantes
-                        <sup style="color: #00000070;font-weight: bold;">1060+212</sup> <strong style="color: #007bff;">
-                            11.500kz</strong>
+                    <button onclick="selectDiamonds(this)" id="botao4">Pacote Pro</button>
+                    <p style="font-family: Poppins; font-weight: bold;" id="desc4">1.272 diamantes
                     </p>
+                        <sup style="color: #00000070;font-weight: bold;" id="sub4">1060+212</sup> 
+                        <strong style="color: #007bff;">
+                            <span id="preco4">11.500kz</span>
+                        </strong>
                 </fieldset>
                 <br>
 
                 <fieldset style="display: flex;justify-content: space-between; border-radius: 12px;">
-                    <button onclick="selectDiamonds(2616)">Pacote Extremo</button>
-                    <p style="font-family: Poppins; font-weight: bold;">2.616 diamantes
-                        <sup style="color: #00000070;font-weight: bold;">2180+436</sup><strong style="color: #007bff;">
-                            22.000kz</strong>
+                    <button onclick="selectDiamonds(this)" id="botao5">Pacote Extremo</button>
+                    <p style="font-family: Poppins; font-weight: bold;" id="desc5">2.616 diamantes
                     </p>
+                        <sup style="color: #00000070;font-weight: bold;" id="sub5">2180+436</sup>
+                        <strong style="color: #007bff;">
+                        <span id="preco5">22.000kz</span>
+                    </strong>
                 </fieldset>
                 <br>
                 </details>
                 <br>
 
-                <!--Forma de pagamento-->
-                <fieldset style=" border-radius: 12px;">
+                <!--pagamentos-->
+                <fieldset style=" border-radius: 12px;background-color: #1cd6e427;" >
                     <details style="display: flex;flex-direction: column; text-align: center;user-select:text;">
                         <summary style="color: #ffff;">FORMAS DE PAGAMENTO</summary>
 
-                        <p style="color:#007bff;">BANCO BAI</p>
-                        <p>
+                        <p style="color:#007bff;" id="titulo0">BANCO BAI</p>
+                        <p id="descricao0">
                             0040 0000 88356594101 26 <br>
-                            Nome: Eduardo Muata Mahata Mueji
                         </p>
+                        <p>Nome:<span id="nome0"> Eduardo Muata Mahata Mueji</span></p>
                         <hr>
 
 
-                        <p style="color:#007bff;"> Banco BFA</p>
-                        <P>
+                        <p style="color:#007bff;" id="titulo1"> Banco BFA</p>
+                        <P id="descricao1">
                             000600004752330330106 <br>
-                            Nome: Eduardo Muata Mahata Mueji
                         </P>
+                        <span id="nome1">Nome: Eduardo Muata Mahata Mueji</span>
                         <hr>
 
-                        <p style="color:#007bff;">ATLÂNTICO para ATLÂNTICO </p>
+                        <p style="color:#007bff;" id="titulo2">ATLÂNTICO para ATLÂNTICO </p>
                         <P>
-                            Conta: 23306644810001 <br>
-                            Iban: 0055.0000.3306.6448.1018.3 <br>
-                            Simões Simao Mateus
-
                         </P>
+                            <p>Conta: <span id="descricao2">23306644810001</span></p><br>
+                           <span id="iban0"> Iban: 0055.0000.3306.6448.1018.3 </span><br>
+                           <span id="nome2"> Simões Simao Mateus</span>
+
                         <hr>
 
-                        <p style="color:#007bff;"> BIC para BIC </p>
-                        <P>
-                            Conta: 23419870910001 <br>
-                            Iban: 0051 0000 34198709101 95 <br>
-                            Nome: Eduardo muata mahata mueji
-                        </P>
+                        <p style="color:#007bff;" id="titulo3"> BIC para BIC </p>
+                        
+                        <p>Conta:<span id="descricao3">  23419870910001</span></p> <br>
+                            <span id="iban1"> Iban: 0051 0000 34198709101 95</span> <br>
+                            <span id="nome3"> Nome: Eduardo muata mahata mueji</span>
                         <hr>
 
 
-                        <p style="color:#007bff;"> Outros </p>
-                        <P>
-                            Tranferencias Express: 974551595 <br>
-                            Pagamento são feito por Tranferencia ou Depósito. <br><br>
-                            Paypayao:974551595
-                            <br>
-                            Unitel many:974551595
-                        </P>
+                        <p style="color:#007bff;" id="titulo4"> Outros </p>
+                        <p>Tranferências Express: <span id="express"> 974551595</span></p>
+
+                           <p>Pagamento são feito por Tranferencia ou Depósito.</p> 
+
+                           <p>PaypayAO:<span id="paypao"> 974551595</span></p>
+
+                           <p>Unitel Money:<span id="unitelmoney"> 974551595</span></p>
                         <br>
-                        <p style="color:red; font-size: 12px;">
+                        <p style="color:red; font-size: 12px;" id="descricao5">
 
                             Tranferencias de bancos diferentes só carregamos após os valores refletirem na conta por
                             mais que apresente o comprovativo.
@@ -241,7 +253,7 @@
                 <br>
 
                 <!-- botoes do whats-->
-                <input type="text" id="playerId" required placeholder="Insira o teu ID do jogador"
+                <input type="text" id="playerId" required placeholder="Insira o teu ID de jogador"
                     oninput="this.value =  this.value.replace(/[^0-9]/g, '').slice(0,15)" style="width: 94%;">
 
                 <button id="whatsapp-btn" onclick="sendToWhatsApp()"
@@ -261,43 +273,42 @@
         <section class="assinatura" id="assinaturas">
             <h1 style="border-bottom: 4px solid black;"> <img src="ff_icon/shopping-cart (2).png" alt="" width="20">
                 Escolha uma Assinatura</h1>
+                <!--assinaturas-->
             <section class="card-assinatura">
 
                 <article>
                     <img src="ff_icon/ass_mensal.webp" alt="" id="card2">
-                    <p>Assinatura Mensal
-                        <br> <br>
-                    <p style="font-size: 15px; color: #054385;">1.800 dimas | 30 dias <br>
-                    <p style="color: #030303;">10.500kz</p>
-                    </p>
-                    </p>
+                    <p id="assin1">Assinatura Mensal</p>
+                    <br>
+                    <p style="font-size: 15px; color: #054385;" id="info0">1.800 dimas | 30 dias </p>
+                    <p style="color: #030303;" id="assinpreco0">10.500kz</p>
+                   
                     <button onclick="assinatura1()">Comprar</button>
                 </article>
 
                 <article>
                     <img src="ff_icon/ass_semanal.webp" alt="" id="card3">
-                    <p>Assin. Semanal</p>
-                    <p style="font-size: 15px; color: #054385;"><br> 340 dimas | 7 dias <br>
-                    <p style="color: #030303;">2.500kz</p>
-                    </p>
+                    <p id="assin2">Assin. Semanal</p>
+                    <p style="font-size: 15px; color: #054385;" id="info1"><br> 340 dimas | 7 dias <br></p>
+                    <p style="color: #030303;" id="assinpreco1">2.500kz</p>
                     <button onclick="assinatura2()">Comprar</button>
                 </article>
 
                 <article>
                     <img src="ff_icon/ass_sem_eco.png" alt="" width="20px">
                     <br><br>
-                    <p>Assin. Semanal económica</p>
-                    <p style="font-size: 15px; color: #054385;"><br> 47 dimas | 7 dias <br>
-                    <p style="color: #030303;">500kz</p>
-                    </p>
+                    <p id="assin3">Assin. Semanal económica</p>
+                    <p style="font-size: 15px; color: #054385;" id="info2"><br> 47 dimas | 7 dias <br></p>
+                    <p style="color: #030303;" id="assinpreco2">500kz</p>
                     <button onclick="assinatura3()">Comprar</button>
                 </article>
 
                 <article id="passeb">
                     <img src="ff_icon/pb.png" alt="">
-                    <p>Passe Booyha</p>
-                    <p style="font-size: 15px; color: #054385;">
-                       Colete pontos até completar <br><br> 2.000kz</p>
+                    <p id="passe">Passe Booyha</p>
+                    <p style="font-size: 15px; color: #054385;" id="passeinfo">
+                       Colete pontos até completar </p>
+                     <span id="passepreco" style="color: #030303;"> 2.000kz </span>
                     <button onclick="passeb()">Comprar</button>
                 </article>
 
@@ -313,8 +324,8 @@
                 <article>
                     <br>
                     <img src="ff_icon/ev03d.png" alt="">
-                    <p>Evolutiva 3 dias</p>
-                    <p style="font-size: 15px; color: #054385;">800kz</p>
+                    <p id="evolutiva1">Evolutiva 3 dias</p>
+                    <p style="font-size: 15px; color: #054385;" id="trilhapreco1">800kz</p>
                     <br><br>
                     <button onclick="evolutiva1()">Comprar</button>
                 </article>
@@ -322,8 +333,8 @@
                 <article>
                     <br><br>
                     <img src="ff_icon/evo7d.png" alt="">
-                    <p>Evolutiva 7 dias</p>
-                    <p style="font-size: 15px; color: #054385;">1.500kz</p>
+                    <p id="evolutiva2">Evolutiva 7 dias</p>
+                    <p style="font-size: 15px; color: #054385;" id="trilhapreco2">1.500kz</p>
                     <br>
                     <button onclick="evolutiva2()">Comprar</button>
                 </article>
@@ -331,8 +342,8 @@
                 <article>
                     <br>
                     <img src="ff_icon/evo30d.png" alt="">
-                    <p>Evolutiva 30 dias</p>
-                    <p style="font-size: 15px; color: #054385;">3.500kz</p>
+                    <p id="evolutiva3">Evolutiva 30 dias</p>
+                    <p style="font-size: 15px; color: #054385;" id="trilhapreco3">3.500kz</p>
                     <br><br>
                     <button onclick="evolutiva3()">Comprar</button>
                 </article>
@@ -348,32 +359,32 @@
                 <article id="passedn">
                     <br>
                     <img src="ff_icon/card-dima.jpg" alt="">
-                    <p>Passe de Nível</p>
-                    <p style="font-size: 15px; color: #054385;">
-                        1.272 dimas <br>
-                        5.500kz</p>
+                    <p id="passenivel">Passe de Nível</p>
+                    <p style="font-size: 15px; color: #054385;" id="passeninfo">
+                        1.272 dimas <br></p>
+                        <span id="passenpreco" style="color: #030303;"> 5.500kz </span>
                     
                     <button onclick="passeDeNivel()">Comprar</button>
                 </article>
-
+                
             </section>
         </section>
-
-
-            <footer>
-                <h1 id="contactos">contactos</h1>
-                <br>
-                <a href="https://wa.me/+244974551595" style="margin-left: 4%;"> WhatsApp <img src="whats.png" alt="" width="16"></a>
-                <br>
-                <p style="color:rgb(65, 221, 65); font-size: 15px;">Atualizado em 01/ 01/ 2026</p>
-                <br>
-              <p>JHOKER SHOP</p>
+        
+        
+        <footer>
+            <h1 id="contactos">contactos</h1>
+            <br>
+            <a href="https://wa.me/+244974551595" style="margin-left: 4%;"> WhatsApp <img src="whats.png" alt="" width="16"></a>
+            <br>
+            <p style="color:rgb(65, 221, 65); font-size: 15px;">Atualizado em Janeiro de 2026</p>
+            <br>
+            <p>JHOKER SHOP</p>
            </footer>
 
     </header>
 
+    <script src="script.js"></script>
 
 </body>
-
 
 </html>

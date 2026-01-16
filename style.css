@@ -17,7 +17,6 @@ a{
     display: flex;
     flex-direction: column;
     font-family: 'josias',Arial, Helvetica, sans-serif;
-    overflow-x: hidden;
 
   }
 
@@ -125,7 +124,6 @@ header article {
     width: 200px;
     max-width: 200px;
     height: 200px;
-    max-height: 200px;
     padding: 20px;
     border-radius: 12px;
 
@@ -157,8 +155,8 @@ header article button{
   }
 
 header article button:hover{
+    letter-spacing: 2px;
     transition: .2s linear;
-    padding: 14px;
     background-color: #0d61bb;
 
     
@@ -313,10 +311,11 @@ details p{
     width: 100%;
     font-size: 16px;
     cursor: pointer;
+    font-weight: bold;
   }
 
   #whatsapp-btn:hover{
-    background-color: #bdbaba;
+    background-color: #06491f;
 }
 
 .diamond-options input {
@@ -500,7 +499,7 @@ sup{
     }
 
     .nav-bar{
-        padding-top: 14%;
+        padding-top: 13%;
         user-select: none;
         text-align: center;
         width: 100%;
@@ -513,6 +512,8 @@ sup{
         height: 100vh;
         max-height: 100vh;
     }
+
+ 
 
     .nav-bar ul{
         display: flex;
@@ -593,8 +594,6 @@ sup{
    
 }
 
-
-
 @media (max-width:976px){
  
     .card-assinatura{
@@ -627,5 +626,5 @@ sup{
 
 
 
-
 }
+
