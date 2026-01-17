@@ -230,6 +230,37 @@ header article img{
     border-radius: 12px; 
 }
 
+.novidades{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.novidades p{
+    text-align: center;
+    color: #000;
+    font-size: 18px;
+    margin-bottom: 2%;
+}
+.novidades article{
+    position: relative;
+}
+.novidades article img{
+    width: 60px;
+}
+.novidades article::after{
+    content: 'Novo';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80px;
+    height: 30px;
+    background-color: red;
+    border-radius: 0 0 0 4px;
+    text-align: center;
+}
+
 #servicos {
     user-select: none;
 }
@@ -443,12 +474,12 @@ sup{
       }
 
 
-    .card-evolutiva article, .card-assinatura article, .card-main article{
+    .card-evolutiva article, .card-assinatura article, .card-main article, .novidades article{
         transition: .2s linear;
     }
 
 
-      .card-evolutiva article:hover, .card-assinatura article:hover, .card-main article:hover{
+      .card-evolutiva article:hover, .card-assinatura article:hover, .card-main article:hover, .novidades article:hover{
         transition: .2s linear;
         box-shadow: #007bff 0 0 10px;;
       }
@@ -546,12 +577,22 @@ sup{
         margin: 2% 0;
     
     }
+    .nov{
+        justify-content: center;
+        text-align: center;
+        border-bottom: 4px solid;
+        width: max-content;
+        margin: 0 auto;
+    }
     .funcionamento h1{
         border-bottom: 4px solid #fff;
     }
 
     #servicos{
         text-align: center;
+        border-bottom: 4px solid;
+        width: max-content;
+        margin: 0 auto;
     }
 
     header section{
