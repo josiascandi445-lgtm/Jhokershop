@@ -15,17 +15,55 @@ a{
   body{
     background-color: #fff;
     display: flex;
-    flex-direction: column;
+
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
     font-family: 'josias',Arial, Helvetica, sans-serif;
 
   }
-
+  
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+.hidden{
+    display: none;
+}
+
+.load{
+font-size: 14px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.load img{
+    width: 50%;
+}
+
+@media (max-width:641px){
+
+    .load{
+        margin-top: 20%;
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }        
+        .load h1{
+            font-size: 22px;
+        }
+    
+}
+
+
+/*
 .logo{
     background-color: #000;
     text-align: center;
@@ -176,14 +214,7 @@ header article img{
     width: 90px;
 }
 
-/*.fundo{
-    text-align: center;
-    justify-content: center;
-    background-color: #000000a8 ;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-}*/
+
 
 .welcome{
     position: relative;
@@ -268,7 +299,7 @@ header article img{
     user-select: none;
 }
 
-/*funcionamento*/
+/*funcionamento
 .funcionamento{
     display: flex;
     flex-direction: column;
@@ -299,7 +330,7 @@ header article img{
 }
 
 
-/*comprar dima*/
+/*comprar dima
 .diamantes{
     display: flex;
     flex-direction: column;
@@ -331,7 +362,7 @@ details p{
     padding: 2%;
 }
 
-/*btn whatsapp*/
+/*btn whatsapp
 #whatsapp-btn {
     background-color: #25D366;
     color: white;
@@ -379,7 +410,7 @@ sup{
     color: #fff;
   }
 
-  /*assinatura*/
+  /*assinatura
   .assinatura{
     display: flex;
     flex-direction: column;
@@ -410,7 +441,7 @@ sup{
     max-height:279px  ;
   }
 
-     /*card hot*/
+     /*card hot
      #passeb{
         position: relative;
       }
@@ -427,7 +458,7 @@ sup{
 
 
 
-  /*trilha-assinatura*/
+  /*trilha-assinatura
     .trilha-evolutiva{
         display: flex;
         flex-direction: column;
@@ -458,7 +489,7 @@ sup{
         font-weight: bold;
       }
 
-      /*card hot*/
+      /*card hot
       #passedn{
         position: relative;
       }
@@ -479,10 +510,10 @@ sup{
     }
 
 
-      .card-evolutiva article:hover, .card-assinatura article:hover, .card-main article:hover, .novidades article:hover{
-        transition: .2s linear;
-        box-shadow: #007bff 0 0 10px;;
-      }
+    .card-evolutiva article:hover, .card-assinatura article:hover, .card-main article:hover, .novidades article:hover{
+      transition: .2s linear;
+      box-shadow: #007bff 0 0 10px;
+    }
 
 
   footer{
@@ -515,7 +546,7 @@ sup{
   
 
 
-/*responsivo*/
+/*responsivo*
 @media (max-width:661px){
 
     .logo{
@@ -669,3 +700,12 @@ sup{
 
 }
 
+
+/*.fundo{
+    text-align: center;
+    justify-content: center;
+    background-color: #000000a8 ;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}*/
