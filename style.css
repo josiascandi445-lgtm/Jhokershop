@@ -14,11 +14,7 @@ a{
 
   body{
     background-color: #fff;
-    display: flex;
 
-    text-align: center;
-    align-items: center;
-    justify-content: center;
 
     font-family: 'josias',Arial, Helvetica, sans-serif;
 
@@ -63,7 +59,7 @@ align-items: center;
 }
 
 
-/*
+
 .logo{
     background-color: #000;
     text-align: center;
@@ -299,7 +295,7 @@ header article img{
     user-select: none;
 }
 
-/*funcionamento
+/*funcionamento*/
 .funcionamento{
     display: flex;
     flex-direction: column;
@@ -330,7 +326,7 @@ header article img{
 }
 
 
-/*comprar dima
+/*comprar dima*/
 .diamantes{
     display: flex;
     flex-direction: column;
@@ -362,7 +358,7 @@ details p{
     padding: 2%;
 }
 
-/*btn whatsapp
+/*btn whatsapp*/
 #whatsapp-btn {
     background-color: #25D366;
     color: white;
@@ -410,7 +406,7 @@ sup{
     color: #fff;
   }
 
-  /*assinatura
+  /*assinatura*/
   .assinatura{
     display: flex;
     flex-direction: column;
@@ -441,7 +437,7 @@ sup{
     max-height:279px  ;
   }
 
-     /*card hot
+     /*card hot*/
      #passeb{
         position: relative;
       }
@@ -458,7 +454,7 @@ sup{
 
 
 
-  /*trilha-assinatura
+  /*trilha-*/
     .trilha-evolutiva{
         display: flex;
         flex-direction: column;
@@ -489,7 +485,7 @@ sup{
         font-weight: bold;
       }
 
-      /*card hot
+      /*card hot*/
       #passedn{
         position: relative;
       }
@@ -546,7 +542,7 @@ sup{
   
 
 
-/*responsivo*
+/*responsivo*/
 @media (max-width:661px){
 
     .logo{
