@@ -215,7 +215,7 @@ header article img{
 .welcome{
     position: relative;
     user-select: none;
-    background-image: url(skin.jpg);
+    background-image: url(top.jpg);
     height: 100vh;
     background-repeat: no-repeat;
     background-position: center;
@@ -509,6 +509,12 @@ sup{
     .card-evolutiva article:hover, .card-assinatura article:hover, .card-main article:hover, .novidades article:hover{
       transition: .2s linear;
       box-shadow: #007bff 0 0 10px;
+    }
+
+    .contas{
+        border: 1px solid red;
+        display: flex;
+        flex-direction: column;
     }
 
 
