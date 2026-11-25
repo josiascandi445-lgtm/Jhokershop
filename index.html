@@ -1,403 +1,72 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-AO">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="compre os seus diamantes na Jhoker Shop ao melhor preço">
-    <meta name="keywords" content="dima, diamantes, Jhoker, Shop, Jhoker Shop, dimaff, Diamante, recarga, ff, Dima">
-    <meta name="author" content="Jhoker Shop">
-    <link rel="shortcut icon" href="ff_icon/shopping-cart (2).png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <title>Jhoker Shop</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Jhoker Shop | Diamantes Free Fire em Angola</title>
+<meta name="description" content="Compre diamantes e assinaturas Free Fire na Jhoker Shop ao melhor preço. Pague por transferência, Express ou Unitel Money.">
+<meta name="theme-color" content="#0B1220">
+<link rel="icon" href="ff_icon/shopping-cart (2).png">
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="#recarga">Jhoker Shop</a>
+    <nav aria-label="Principal"><a href="#assinaturas">Assinaturas</a><a href="#pagamento">Pagamento</a><a href="#contactos">Contactos</a></nav>
+    <a class="btn ghost small" href="jhoker-shop.apk" download>App Android</a>
+  </div>
+</header>
 
-
-
-    <div class="logo">
-       <a href="#inicio"> <h1>JHOKER SHOP <sup style="color: #007bff !important;font-size: 15px;">FF</sup></h1></a>
+<main>
+  <section id="recarga" class="wrap hero">
+    <div class="intro">
+      <h1>Diamantes Free Fire na tua conta, ao melhor preço.</h1>
+      <p>Insere o teu ID, escolhe o pacote e confirma o pedido por WhatsApp. A recarga é feita após a confirmação do pagamento.</p>
     </div>
+    <div class="order">
+      <label for="playerId">ID de jogador</label>
+      <input id="playerId" inputmode="numeric" autocomplete="off" maxlength="15" placeholder="Ex.: 123456789" aria-describedby="idErr">
+      <p class="err" id="idErr" role="alert" hidden>Insira o seu ID de jogador para continuar.</p>
+      <div class="packs" id="packs" role="radiogroup" aria-label="Pacotes de diamantes"></div>
+      <div class="summary">
+        <div><span id="selName"></span><strong id="selPrice"></strong></div>
+        <button class="btn primary" id="orderBtn" type="button">Pedir no WhatsApp</button>
+      </div>
+    </div>
+  </section>
 
-    <section class="nav-bar" id="inicio">
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="#servicos">Serviços</a></li>
-            <li><a href="#funcionamento">Como funciona</a></li>
-            <li><a href="#contactos">Contactos</a></li>
-        </ul>
-    </section>
+  <section id="assinaturas" class="wrap sec">
+    <h2>Assinaturas e passes</h2>
+    <div id="subs"></div>
+  </section>
 
-    <header>
-      
-            <div class="welcome">
-                <h1 style="color:#fff;" id="linha1">Bem-Vindo a JHOKER SHOP</h1>
-                <br>
-                <p id="linha2"> Carregando...</p><br>
-                <p id="linha3">Carregando...</p> <br>
-                <p id="linha4">Carregando...</p>
-            </div>
-            <h1 class="nov">Novidades</h1>
-            <section class="novidades">
-                <p>Agora podes usar a App da Jhoker Shop </p>
-                <article style="text-align: center;justify-content: center;display: flex;flex-direction: column;align-items: center;"><br>
-                    <img src="ff_icon/shopping-cart (2).png" alt="">
-                    <p>Jhoker Shop Apk</p><br>
-                    <a href="Jhoker Shop.apk" download style="width:100%;"><button style="color: #fff;">Baixar</button></a>
-                </article>
-            </section>
+  <section id="pagamento" class="wrap sec">
+    <h2>Como pagar</h2>
+    <ol class="steps">
+      <li>Escolhe o produto e insere o teu ID.</li>
+      <li>Paga por transferência, depósito, Express, PayPay AO ou Unitel Money.</li>
+      <li>Envia o comprovativo no WhatsApp e aguarda a confirmação.</li>
+    </ol>
+    <div class="banks" id="pay"></div>
+    <p class="note">Transferências entre bancos diferentes só são carregadas depois de o valor aparecer na conta, mesmo com comprovativo.</p>
+  </section>
+</main>
 
-            <h1 id="servicos">Serviços Disponíveis</h1>
-            <section class="card-main">
-            <article class="card" title="Faça compra de diamantes free fire">
-                <img src="ff_icon/card-dima.jpg" alt="">
-                <p>Diamantes</p>
-                <a href="#buy-dima"><button>Selecionar</button></a>
-            </article>
-
-            <article class="card" title="Faça compra e venda de contas free fire">
-                <img src="ff_icon/icon-ff.jpeg" alt="" id="card2">
-                <p>Conta FF</p>
-                <a href="#"><button onclick="contaff()">Selecionar</button></a>
-            </article>
-
-
-            <article class="card" title="Faça a sua assinatura free fire">
-                <img src="ff_icon/ass_semanal.webp" alt="" id="card2">
-                <p>Assinaturas</p>
-                <a href="#assinaturas"><button>Selecionar</button></a>
-            </article>
-        </section>
-        <br>
-
-    <section class="funcionamento" id="funcionamento">
-        <h1 >Como Funciona</h1>
-        <section class="card-funcionamento">
-            <article>
-                <img src="ff_icon/card-dima.jpg" alt="">
-                <p style="text-align: center;color: #007bff;">
-                   <strong> Comprar Diamantes</strong>
-                </p>
-                <br>
-                <p>
-                    1) Insira o seu id <br>
-                    2) Selecione o método de pagamento<br>
-                    3) Faça o pagamento <br>
-                    4) Faça o pedido via Whatsapp <br>
-                    5) Envie o comprovativo do pagamento <br>
-                    6) Aguarde a confirmação
-                </p>
-            </article>
-
-            <article>
-                <img src="ff_icon/icon-ff.jpeg" alt="">
-                <p style="text-align: center;color: #007bff;">
-                   <strong> Contas FF</strong>
-                </p>
-                <br>
-                <p>
-                    1) Fale com o ADM Jhoker <br>
-                    2) Explique o que quer: <br>
-                    • Comprar uma conta <br>
-                    • Vender uma conta<br>
-                </p>
-            </article>
-
-            <article>
-                <img src="ff_icon/ass_semanal.webp" alt="">
-                <p style="text-align: center;color: #007bff;">
-                   <strong> Assinaturas</strong>
-                </p>
-                <br>
-                <p>
-                    Compre uma
-                    assinatura de : <br>
-                    • Diamantes. <br>
-                    • Armas evolutivas. <br><br>
-                    1) Escolha uma assinatura <br>
-                    2) Insira o seu id<br>
-                    3) Clique em comprar<br>
-                    4) Faça o pagamento<br>
-                    5) Envie o comprovativo<br>
-                    6) Aguarde a confirmação
-                    
-                </p>
-            </article>
-        </section>
-
-    
-    </section>
-        <br>
-        <section class="diamantes">
-            <h1 style="border-bottom: 4px solid black;"><img src="ff_icon/shopping-cart (2).png" alt="" width="20">
-                Comprar diamantes</h1>
-            <br>
-            <section class="diamond-options" id="buy-dima">
-                
-              
-                <fieldset style="display: flex;justify-content: space-between; border-radius: 12px;">
-                    <button onclick="selectDiamonds(this)" class="active" id="botao0">Pacote Mini</button>
-                    <p style="font-family: Poppins; font-weight: bold;" id="desc0">
-                        78 diamantes</p>
-                    <sup style="color: #00000070;font-weight: bold;" id="sub0">65+13</sup> 
-                    <strong style="color: #007bff;">
-                       <span id="preco0"> 900kz</span>
-                    </strong>
-                </fieldset>
-
-                <br>
-
-                <fieldset style="display: flex;justify-content: space-between; border-radius: 12px;">
-                    <button onclick="selectDiamonds(this)" id="botao1">Pacote Lite</button>
-                    <p style="font-family: Poppins; font-weight: bold;" id="desc1"> 120 diamantes
-                    </p>
-                        <sup style="color: #00000070;font-weight: bold;"id="sub1">100+20</sup>
-                         <strong style="color: #007bff;">
-                            <span id="preco1"> 1.300kz</span>
-                        </strong>
-                </fieldset>
-                <br>
-
-                <fieldset style="display: flex;justify-content: space-between; border-radius: 12px;">
-                    <button onclick="selectDiamonds(this)" id="botao2">Pacote Ligeiro</button>
-                    <p style="font-family: Poppins; font-weight: bold;" id="desc2">372 diamantes
-                    </p>
-                        <sup style="color: #00000070;font-weight: bold;"id="sub2">310+62</sup> 
-                        <strong style="color: #007bff;">
-                            <span id="preco2"> 3.700kz</span>
-                        </strong>
-                </fieldset>
-                <br>
-
-                <fieldset style="display: flex;justify-content: space-between; border-radius: 12px;">
-                    <button onclick="selectDiamonds(this)" id="botao3">Pacote Mediano</button>
-                    <p style="font-family: Poppins; font-weight: bold;" id="desc3">624 diamantes
-                    </p>
-                        <sup style="color: #00000070;font-weight: bold;" id="sub3">520+104</sup> 
-                        <strong style="color: #007bff;">
-                            <span id="preco3">  5.300kz </span>
-                        </strong>
-                </fieldset>
-                <br>
-
-                <fieldset style="display: flex;justify-content: space-between; border-radius: 12px;">
-                    <button onclick="selectDiamonds(this)" id="botao4">Pacote Pro</button>
-                    <p style="font-family: Poppins; font-weight: bold;" id="desc4">1.272 diamantes
-                    </p>
-                        <sup style="color: #00000070;font-weight: bold;" id="sub4">1060+212</sup> 
-                        <strong style="color: #007bff;">
-                            <span id="preco4">11.500kz</span>
-                        </strong>
-                </fieldset>
-                <br>
-
-                <fieldset style="display: flex;justify-content: space-between; border-radius: 12px;">
-                    <button onclick="selectDiamonds(this)" id="botao5">Pacote Extremo</button>
-                    <p style="font-family: Poppins; font-weight: bold;" id="desc5">2.616 diamantes
-                    </p>
-                        <sup style="color: #00000070;font-weight: bold;" id="sub5">2180+436</sup>
-                        <strong style="color: #007bff;">
-                        <span id="preco5">22.000kz</span>
-                    </strong>
-                </fieldset>
-                <br>
-                </details>
-                <br>
-
-      
-                <fieldset style=" border-radius: 12px;background-color: #1cd6e427;" >
-                    <details style="display: flex;flex-direction: column; text-align: center;user-select:text;">
-                        <summary style="color: #ffff;">FORMAS DE PAGAMENTO</summary>
-
-                        <p style="color:#007bff;" id="titulo0">BANCO BAI</p>
-                        <p id="descricao0">
-                            0040 0000 88356594101 26 <br>
-                        </p>
-                        <p>Nome:<span id="nome0"> Eduardo Muata Mahata Mueji</span></p>
-                        <hr>
-
-
-                        <p style="color:#007bff;" id="titulo1"> Banco BFA</p>
-                        <P id="descricao1">
-                            000600004752330330106 <br>
-                        </P>
-                        <span id="nome1">Nome: Eduardo Muata Mahata Mueji</span>
-                        <hr>
-
-                        <p style="color:#007bff;" id="titulo2">ATLÂNTICO para ATLÂNTICO </p>
-                        <P>
-                        </P>
-                            <p>Conta: <span id="descricao2">23306644810001</span></p><br>
-                           <span id="iban0"> Iban: 0055.0000.3306.6448.1018.3 </span><br>
-                           <span id="nome2"> Simões Simao Mateus</span>
-
-                        <hr>
-
-                        <p style="color:#007bff;" id="titulo3"> BIC para BIC </p>
-                        
-                        <p>Conta:<span id="descricao3">  23419870910001</span></p> <br>
-                            <span id="iban1"> Iban: 0051 0000 34198709101 95</span> <br>
-                            <span id="nome3"> Nome: Eduardo muata mahata mueji</span>
-                        <hr>
-
-
-                        <p style="color:#007bff;" id="titulo4"> Outros </p>
-                        <p>Tranferências Express: <span id="express"> 974551595</span></p>
-
-                           <p>Pagamento são feito por Tranferencia ou Depósito.</p> 
-
-                           <p>PaypayAO:<span id="paypao"> 974551595</span></p>
-
-                           <p>Unitel Money:<span id="unitelmoney"> 974551595</span></p>
-                        <br>
-                        <p style="color:red; font-size: 12px;" id="descricao5">
-
-                            Tranferencias de bancos diferentes só carregamos após os valores refletirem na conta por
-                            mais que apresente o comprovativo.
-                        </p>
-
-
-                </fieldset>
-                </details>
-                <br>
-
-              
-                <input type="text" id="playerId" required placeholder="Insira o teu ID de jogador"
-                    oninput="this.value =  this.value.replace(/[^0-9]/g, '').slice(0,15)" style="width: 94%;">
-
-                <button id="whatsapp-btn" onclick="sendToWhatsApp()"
-                    style="display: flex; align-items: center;justify-content: center;gap: 8px;"> <img src="whats.png"
-                        alt="logo" width="20px"> Fazer pedido via WhatsApp</button>
-
-                <button id="whatsapp-btn" style="display: flex; align-items: center;justify-content: center;gap: 8px;">
-                    <img src="whats.png" alt="logo" width="20px"> <a
-                        href="https://chat.whatsapp.com/KGaOBQMsn6rF4v4ZkXmGCT" target="_blank"
-                        style="text-decoration: none;color: #fff;">Juntar-se ao grupo do WhatsApp</a></button>
-
-
-            </section>
-        </section>
-
-
-        <section class="assinatura" id="assinaturas">
-            <h1 style="border-bottom: 4px solid black;"> <img src="ff_icon/shopping-cart (2).png" alt="" width="20">
-                 Assinaturas</h1>
-               
-            <section class="card-assinatura">
-
-                <article>
-                    <img src="ff_icon/ass_mensal.webp" alt="" id="card2">
-                    <p id="assin1">Assinatura Mensal</p>
-                    <br>
-                    <p style="font-size: 15px; color: #054385;" id="info0">1.800 dimas | 30 dias </p>
-                    <p style="color: #030303;" id="assinpreco0">10.500kz</p>
-                   
-                    <button onclick="assinatura1()">Comprar</button>
-                </article>
-
-                <article>
-                    <img src="ff_icon/ass_semanal.webp" alt="" id="card3">
-                    <p id="assin2">Assin. Semanal</p>
-                    <p style="font-size: 15px; color: #054385;" id="info1"><br> 340 dimas | 7 dias <br></p>
-                    <p style="color: #030303;" id="assinpreco1">2.500kz</p>
-                    <button onclick="assinatura2()">Comprar</button>
-                </article>
-
-                <article>
-                    <img src="ff_icon/ass_sem_eco.png" alt="" width="20px">
-                    <br><br>
-                    <p id="assin3">Assin. Semanal económica</p>
-                    <p style="font-size: 15px; color: #054385;" id="info2"><br> 47 dimas | 7 dias <br></p>
-                    <p style="color: #030303;" id="assinpreco2">500kz</p>
-                    <button onclick="assinatura3()">Comprar</button>
-                </article>
-
-                <article id="passeb">
-                    <img src="ff_icon/pb.png" alt="">
-                    <p id="passe">Passe Booyha</p>
-                    <p style="font-size: 15px; color: #054385;" id="passeinfo">
-                       Colete pontos até completar </p>
-                     <span id="passepreco" style="color: #030303;"> 2.000kz </span>
-                    <button onclick="passeb()">Comprar</button>
-                </article>
-
-            </section>
-        </section>
-
-
-
-        <section class="trilha-evolutiva" id="evolutiva">
-        <h1 style="border-bottom: 4px solid black;"><img src="ff_icon/shopping-cart (2).png" alt="" width="20">
-            Trilha da evolutiva</h1>
-        <section class="card-evolutiva" >
-                <article>
-                    <br>
-                    <img src="ff_icon/ev03d.png" alt="">
-                    <p id="evolutiva1">Evolutiva 3 dias</p>
-                    <p style="font-size: 15px; color: #054385;" id="trilhapreco1">800kz</p>
-                    <br><br>
-                    <button onclick="evolutiva1()">Comprar</button>
-                </article>
-
-                <article>
-                    <br><br>
-                    <img src="ff_icon/evo7d.png" alt="">
-                    <p id="evolutiva2">Evolutiva 7 dias</p>
-                    <p style="font-size: 15px; color: #054385;" id="trilhapreco2">1.500kz</p>
-                    <br>
-                    <button onclick="evolutiva2()">Comprar</button>
-                </article>
-
-                <article>
-                    <br>
-                    <img src="ff_icon/evo30d.png" alt="">
-                    <p id="evolutiva3">Evolutiva 30 dias</p>
-                    <p style="font-size: 15px; color: #054385;" id="trilhapreco3">3.500kz</p>
-                    <br><br>
-                    <button onclick="evolutiva3()">Comprar</button>
-                </article>
-                <br>
-                <br>
-            </section>
-        </section>
-      
-        <section class="trilha-evolutiva" id="evolutiva">
-        <h1 style="border-bottom: 4px solid black;"><img src="ff_icon/shopping-cart (2).png" alt="" width="20">
-            Outras assinaturas</h1>
-        <section class="card-evolutiva"  >
-                <article id="passedn">
-                    <br>
-                    <img src="ff_icon/card-dima.jpg" alt="">
-                    <p id="passenivel">Passe de Nível</p>
-                    <p style="font-size: 15px; color: #054385;" id="passeninfo">
-                        1.272 dimas <br></p>
-                        <span id="passenpreco" style="color: #030303;"> 5.500kz </span>
-                    
-                    <button onclick="passeDeNivel()">Comprar</button>
-                </article>
-                
-            </section>
-        </section>
-        
-        
-        <footer>
-            <h1 id="contactos">contactos</h1>
-            <br>
-            <a href="https://wa.me/+244974551595" style="margin-left: 4%;"> WhatsApp <img src="whats.png" alt="" width="16"></a>
-            <br>
-            <p style="color:rgb(65, 221, 65); font-size: 15px;">Atualizado em Janeiro de 2026</p>
-            <br>
-            <p>JHOKER SHOP</p>
-           </footer>
-
-    </header>
-
-</div>
-
-    <script src="script.js"></script>
-
+<footer id="contactos" class="foot">
+  <div class="wrap fgrid">
+    <div>
+      <h2>Contactos</h2>
+      <p>Atendimento por WhatsApp.</p>
+    </div>
+    <div class="actions">
+      <a class="btn primary" href="https://wa.me/244974551595" target="_blank" rel="noopener">Falar no WhatsApp</a>
+      <a class="btn ghost" href="https://chat.whatsapp.com/KGaOBQMsn6rF4v4ZkXmGCT" target="_blank" rel="noopener">Grupo do WhatsApp</a>
+      <a class="btn ghost" href="https://wa.me/244974551595?text=Ol%C3%A1%20Jhoker%20Shop!%20Quero%20informa%C3%A7%C3%B5es%20sobre%20compra%20e%20venda%20de%20contas%20Free%20Fire." target="_blank" rel="noopener">Comprar ou vender conta</a>
+    </div>
+  </div>
+  <p class="wrap copy">© Jhoker Shop</p>
+</footer>
+<script src="script.js"></script>
 </body>
-
 </html>
